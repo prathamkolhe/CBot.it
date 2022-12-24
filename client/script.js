@@ -77,7 +77,7 @@ const handleSubmit = async (e) => {
 
   loader(messageDiv);
 
-  const response = await fetch('http://localhost:5005', {
+  const response = await fetch('https://cbot-it.onrender.com/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
