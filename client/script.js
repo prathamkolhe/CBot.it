@@ -77,7 +77,7 @@ const handleSubmit = async (e) => {
 
   loader(messageDiv);
 
-  const response = await fetch('https://cbot-it.onrender.com', {
+  const response = await fetch('http://localhost:5005', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -110,4 +110,4 @@ form.addEventListener('keyup', (e) => {
   if (e.keyCode === 13) {
     handleSubmit(e);
   }
-})
+});
